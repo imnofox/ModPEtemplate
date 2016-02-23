@@ -20,12 +20,11 @@ Make sure you have [an FTP server running on your testing device](https://play.g
 `.ftppass` should have the format:
 ```
 {
-  "key": {
+	"key": {
 		"ip": "192.168.1.xx",
 		"port": 2221,
-    "username": "xxxx",
-    "password": "xxxx"
-  }
+		"username": "xxxx",
+		"password": "xxxx"
+	}
 }
-
 ```
