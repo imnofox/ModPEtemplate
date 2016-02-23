@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Generic template",
   "author": "imnofox <lachlan@imnofox.com>",
-  "dependencies": {},
+  "license": "MIT",
+  "dependencies": {
+    "modpe-globe": "github:imnofox/modpe-global"
+  },
   "devDependencies": {
     "babelify": "^7.2.0",
     "grunt": "^0.4.5",
