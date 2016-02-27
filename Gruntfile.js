@@ -33,8 +33,8 @@ module.exports = function(grunt) {
             ['babelify']
           ]
         },
-        src: 'src/' + pkg.name + '.js',
-        dest: 'build/' + pkg.name + '.js'
+        src: `src/${pkg.name}.js`,
+        dest: `build/${pkg.name}.js`
       },
       test: {
         options: {
@@ -42,30 +42,30 @@ module.exports = function(grunt) {
             ['babelify']
           ]
         },
-        src: 'src/' + pkg.name + '.js',
-        dest: 'temp/' + pkg.name + '.js'
+        src: `src/${pkg.name}.js`,
+        dest: `temp/${pkg.name}.js`
       }
     },
     uglify: {
       build: {
-        src: 'build/' + pkg.name + '.js',
-        dest: 'build/' + pkg.name + '.min.js'
+        src: `build/${pkg.name}.js`,
+        dest: `build/${pkg.name}.min.js`
       },
       test: {
-        src: 'temp/' + pkg.name + '.js',
-        dest: 'temp/' + pkg.name + '.min.js'
+        src: `temp/${pkg.name}.js`,
+        dest: `temp/${pkg.name}.min.js`
       }
     },
     zip: {
       'test': {
         router: router,
         src: ['temp/manifest.json', 'src/texture/*', 'temp/*.min.js'],
-        dest: 'temp/' + pkg.name + '.modpkg'
+        dest: `temp/${pkg.name}.modpkg`
       },
       'build': {
         router: router,
         src: ['temp/manifest.json', 'src/texture/*', 'build/*.min.js'],
-        dest: 'build/' + pkg.name + '.modpkg'
+        dest: `build/${pkg.name}.modpkg`
       }
     },
     "file-creator": {
