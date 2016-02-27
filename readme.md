@@ -5,6 +5,8 @@ Make sure Grunt is installed.
 
 ## Building
 
+**Make sure your main JS file is named the same as your package name**
+
 This utilizes Grunt.
 Simply run `$ grunt`
 
