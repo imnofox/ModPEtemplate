@@ -96,6 +96,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
 
   grunt.registerTask('test', ['browserify:test', 'uglify:test', 'file-creator', 'zip:test', 'ftp-deploy', 'clean']);
-  grunt.registerTask('default', ['browserify', 'uglify', 'file-creator', 'zip:build']);
+  grunt.registerTask('default', ['browserify', 'uglify', 'file-creator', 'zip:build, clean']);
 
 };
