@@ -30,7 +30,9 @@ module.exports = function(grunt) {
       dist: {
         options: {
           transform: [
-            ['babelify']
+            ['babelify', {
+				presets: ["es2015"]
+			}]
           ]
         },
         src: `src/${pkg.name}.js`,
@@ -39,7 +41,9 @@ module.exports = function(grunt) {
       test: {
         options: {
           transform: [
-            ['babelify']
+            ['babelify', {
+				presets: ["es2015"]
+			}]
           ]
         },
         src: `src/${pkg.name}.js`,
