@@ -89,8 +89,13 @@ module.exports = function(grunt) {
         clean: ['temp/']
     });
 
-    grunt.loadNpmTasks(['grunt-ftp-deploy', 'grunt-browserify', 'grunt-contrib-uglify', 'grunt-zip', 'grunt-file-creator', 'grunt-contrib-clean']);
-
+    grunt.loadNpmTasks('grunt-ftp-deploy');
+    grunt.loadNpmTasks('grunt-browserify');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-zip');
+    grunt.loadNpmTasks('grunt-file-creator');
+    grunt.loadNpmTasks('grunt-contrib-clean');
+    
     grunt.registerTask('test', ['browserify:test', 'uglify:test', 'file-creator', 'zip:test', 'ftp-deploy', 'clean']);
     grunt.registerTask('default', ['browserify', 'uglify', 'file-creator', 'zip:build', 'clean']);
 
